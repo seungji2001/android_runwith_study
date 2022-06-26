@@ -33,6 +33,13 @@
     <string name="etKeyword">친구아이디 입력하기</string>
     //activity_mate
     <string name="sendMsg">응원메세지 보내기</string>
+    <string name="msg">걷기 메이트한테 응원메시지를 보내면\n
+푸시 알림으로 메시지가 전송됩니다 :)</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //menu
+    <string name="nicname">내 닉네임</string>
+    <string name="walkingrecord">걸음기록</string>
+    <string name="mate">메이트 신청/변경</string>
 </resources>

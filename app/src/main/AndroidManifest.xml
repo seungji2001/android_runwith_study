@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+<<<<<<< HEAD
+=======
+            android:name=".RegistActivity"
+            android:exported="false" />
+        <activity
+>>>>>>> 09a25cf (second commit)
             android:name=".MainActivity"
             android:exported="false" />
         <activity
