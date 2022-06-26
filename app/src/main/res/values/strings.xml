@@ -1,0 +1,38 @@
+<resources>
+    //HomeActivity
+    <string name="app_name">런위드</string>
+    <string name="run_with">
+    우리 같이 걷기하자\nRUN WITH
+    </string>
+    <string name="id">아이디</string>
+    <string name="login">로그인</string>
+
+    //MainActivity
+    <string name="title">티나님의 오늘 걸음</string>
+    <string name="date">2022.06.02.목</string>
+    <string name="helper">도움말</string>
+
+    //menu
+    <string name="menuBtn1">ME</string>
+    <string name="menuBtn2">MATE</string>
+    <string name="menuBtn3">MENU</string>
+
+    //invite_page
+    <string name="inviteMsg">티나님이 걷기 메이트를 신청했습니다.\n 수락하시겠습니까?</string>
+
+    //joinMsg
+    <string name="joinMsg1">걷기 메이트</string>
+    <string name="join_submit_btn">전송하기</string>
+    <string name="select_msg">메시지 선택하기</string>
+
+    <string name="kcal">칼로리</string>
+    <string name="walk">걸음시간</string>
+    <string name="distance">거리</string>
+    <string name="btnFriend">메이트추가/변경하기</string>
+
+    <string name="etKeyword">친구아이디 입력하기</string>
+    //activity_mate
+    <string name="sendMsg">응원메세지 보내기</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

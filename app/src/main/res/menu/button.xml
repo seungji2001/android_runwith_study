@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/me_btn"
+        android:enabled="true"
+        android:icon="@drawable/menu_btn1"
+        android:title="@string/menuBtn1" />
+    <item
+        app:showAsAction="always"
+        android:id="@+id/mate_btn"
+        android:enabled="true"
+        android:icon="@drawable/menu_btn2"
+        android:title="@string/menuBtn2"/>
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/menu_btn"
+        android:enabled="true"
+        android:title="@string/menuBtn3">
+    </item>
+
+</menu>
