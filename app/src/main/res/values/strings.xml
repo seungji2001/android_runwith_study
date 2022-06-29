@@ -8,7 +8,7 @@
     <string name="login">로그인</string>
 
     //MainActivity
-    <string name="title">티나님의 오늘 걸음</string>
+    <string name="title">님의 오늘 걸음</string>
     <string name="date">2022.06.02.목</string>
     <string name="helper">도움말</string>
 

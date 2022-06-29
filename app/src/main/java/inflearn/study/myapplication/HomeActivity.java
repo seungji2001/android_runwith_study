@@ -1,5 +1,6 @@
 package inflearn.study.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,8 +32,17 @@ public class HomeActivity extends AppCompatActivity {
         mateActivity = new MateActivity();
         menuActivity = new MenuActivity();
 
+        Intent intent = getIntent();
+        String id = intent.getStringExtra("id");
+
         //제일 처음 띄워줄 뷰 세팅
-        getSupportFragmentManager().beginTransaction().replace(R.id.frameLayout,meActivity).commitAllowingStateLoss();
+        Bundle bundle = new Bundle();
+        bundle.putString("id",id);
+
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        meActivity.setArguments(bundle);
+        mateActivity.setArguments(bundle);
+        transaction.replace(R.id.frameLayout,meActivity).commitAllowingStateLoss();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

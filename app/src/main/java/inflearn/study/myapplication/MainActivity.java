@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 //String pw = etPw.getText().toString();
 
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                intent.putExtra("id",id);
                 startActivity(intent);
             }
         });
