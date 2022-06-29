@@ -79,32 +79,52 @@
                 android:layout_centerInParent="true"
                 android:background="#ffffff"
                 app:srcCompat="@drawable/new_btn" />
-
-            <ImageButton
-                android:id="@+id/mate_helper"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_above="@+id/btnNew"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="130dp"
-                android:layout_marginEnd="54dp"
-                android:layout_marginBottom="103dp"
-                android:layout_toEndOf="@+id/btnNew"
-                android:background="@android:color/transparent"
-                android:src="@drawable/mate_helper" />
         </RelativeLayout>
     </FrameLayout>
 
-    <Button
-        android:id="@+id/btnSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/mate_btn"
-        android:text="@string/sendMsg"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        android:textColor="@color/white" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <Button
+                android:id="@+id/mate_helper"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/mate_helper" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/mate_helper"
+                android:layout_alignTop="@+id/mate_helper"
+                android:layout_alignEnd="@+id/mate_helper"
+                android:layout_alignBottom="@+id/mate_helper"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/mate_helper1" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnSendMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/mate_btn"
+            android:text="@string/sendMsg"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </FrameLayout>
 </LinearLayout>
