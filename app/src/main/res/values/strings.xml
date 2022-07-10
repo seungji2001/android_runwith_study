@@ -6,7 +6,7 @@
     </string>
     <string name="id">아이디</string>
     <string name="login">로그인</string>
-
+    <string name="register">회원가입</string>
     //MainActivity
     <string name="title">님의 오늘 걸음</string>
     <string name="date">2022.06.02.목</string>
