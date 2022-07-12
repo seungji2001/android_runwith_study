@@ -51,12 +51,13 @@ public class RegisterActivity extends AppCompatActivity implements ILoginView {
                 String userName = et_name.getText().toString();
                 int userAge = Integer.parseInt(et_age.getText().toString());
 
-                loginController.OnLogin(userID.trim(),userPass.trim(),userName.trim(),userAge);
+                boolean check = loginController.OnLogin(userID.trim(),userPass.trim(),userName.trim(),userAge);
+
                 Response.Listener<String> responseListener = response -> {
                     try {
                         JSONObject jsonObject = new JSONObject(response);
                         boolean success = jsonObject.getBoolean("success");
-                        if(success){//회원등록에 성공한 경우
+                        if(success && check){//회원등록에 성공한 경우
                             Toast.makeText(getApplicationContext(),"회원 등록에 성공했습니다",Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
                             startActivity(intent);

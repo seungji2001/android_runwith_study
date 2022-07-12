@@ -9,8 +9,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 public class MenuActivity extends Fragment {
+
+    private TextView textView;
+    private View view;
 
     public MenuActivity(){
 
@@ -19,6 +23,14 @@ public class MenuActivity extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_menu,container,false);
+        view = inflater.inflate(R.layout.activity_menu,container,false);
+        textView = view.findViewById(R.id.id);
+
+        Bundle bundle = getArguments();
+
+        String id = bundle.getString("id");
+        textView.setText(id);
+
+        return view;
     }
 }

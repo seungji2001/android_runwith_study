@@ -42,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         meActivity.setArguments(bundle);
         mateActivity.setArguments(bundle);
+        menuActivity.setArguments(bundle);
         transaction.replace(R.id.frameLayout,meActivity).commitAllowingStateLoss();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

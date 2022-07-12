@@ -14,25 +14,32 @@ public class LoginController implements ILoginController{
     }
 
     @Override
-    public void OnLogin(String email, String password, String userName, int userAge) {
+    public boolean OnLogin(String email, String password, String userName, int userAge) {
         User user = new User(email,password,userName,userAge);
 
         int logincode = user.isValid();
 
         if(logincode == 0){
             loginView.OnLoginError("Please Enter id");
+            return false;
         }else if(logincode == 1){
             loginView.OnLoginError("Id should be more the 6 characters");
+            return false;
         }else if (logincode == 2){
             loginView.OnLoginError("Please enter a password");
+            return false;
         }else if (logincode == 3){
             loginView.OnLoginError("Password should be more the 6 characters");
+            return false;
         }else if(logincode == 4) {
             loginView.OnLoginError("Please enter an user name");
+            return false;
         }else if (logincode == 5) {
             loginView.OnLoginError("Please enter an user age");
+            return false;
         }else{
                 loginView.OnLoginSuccess("success");
+                return true;
             }
         }
     }
