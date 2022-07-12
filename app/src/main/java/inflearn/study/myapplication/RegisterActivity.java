@@ -16,15 +16,23 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class RegisterActivity extends AppCompatActivity {
+import inflearn.study.myapplication.Controller.ILoginController;
+import inflearn.study.myapplication.Controller.LoginController;
+import inflearn.study.myapplication.View.ILoginView;
+
+public class RegisterActivity extends AppCompatActivity implements ILoginView {
 
     private EditText et_id,et_pass,et_name,et_age;
     private Button btn_register;
+
+
+    ILoginController loginController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { //액티비티 시작시 처음으로 실행되는 생명주기
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        loginController = new LoginController(this);
 
         //아이디값 찾아주기
         et_id = findViewById(R.id.et_id);
@@ -43,6 +51,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String userName = et_name.getText().toString();
                 int userAge = Integer.parseInt(et_age.getText().toString());
 
+                loginController.OnLogin(userID.trim(),userPass.trim(),userName.trim(),userAge);
                 Response.Listener<String> responseListener = response -> {
                     try {
                         JSONObject jsonObject = new JSONObject(response);
@@ -68,5 +77,16 @@ public class RegisterActivity extends AppCompatActivity {
                 queue.add(registerRequest);
             }
         });
+
+    }
+
+    @Override
+    public void OnLoginSuccess(String message) {
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void OnLoginError(String message) {
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show();
     }
 }
