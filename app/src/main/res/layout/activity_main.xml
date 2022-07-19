@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="33dp"
-        android:hint="@string/id"
+        android:hint="@string/editTextMain"
         android:minHeight="48dp"
         android:paddingLeft="17dp"
         android:textAppearance="@style/login_page"
@@ -50,11 +50,11 @@
         android:layout_gravity="center"
         android:layout_marginTop="17dp"
         android:background="@drawable/login_rectangle02"
-        android:text="@string/login"
+        android:text="@string/btnMain"
         android:textAppearance="@style/login_page"
         android:textColor="@color/white" />
 
-    <Button
+    <!--<Button
         android:id="@+id/btnRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,6 +63,6 @@
         android:background="@drawable/login_rectangle02"
         android:text="@string/register"
         android:textAppearance="@style/login_page"
-        android:textColor="@color/white" />
+        android:textColor="@color/white" />-->
 
 </LinearLayout>

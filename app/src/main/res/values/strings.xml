@@ -1,16 +1,19 @@
 <resources>
-    //HomeActivity
+    //MainActivity
     <string name="app_name">런위드</string>
     <string name="run_with">
     우리 같이 걷기하자\nRUN WITH
     </string>
-    <string name="id">아이디</string>
-    <string name="login">로그인</string>
+    <string name="editTextMain">닉네임</string>
+    <string name="btnMain">계정생성</string>
     <string name="register">회원가입</string>
-    //MainActivity
+
+    //MeActivity
     <string name="title">님의 오늘 걸음</string>
     <string name="date">2022.06.02.목</string>
     <string name="helper">도움말</string>
+    <string name="me_text">게으름은 피곤하기 전에 쉬는\n
+        습관일 뿐. - 쥘 르나르 -</string>
 
     //menu
     <string name="menuBtn1">ME</string>
