@@ -38,8 +38,8 @@ public class MateActivity extends Fragment {
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
                 FragmentTransaction tr = getActivity().getSupportFragmentManager().beginTransaction();
-                RegistActivity registActivity = new RegistActivity();
-                tr.replace(R.id.frameLayout, registActivity);
+                JoinActivity joinActivity = new JoinActivity();
+                tr.replace(R.id.frameLayout, joinActivity);
                 tr.commit();
             }
         });

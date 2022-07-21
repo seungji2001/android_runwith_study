@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".View.me_btn_helper"
+            android:name=".ListMsgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WaitActivty"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity0"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"

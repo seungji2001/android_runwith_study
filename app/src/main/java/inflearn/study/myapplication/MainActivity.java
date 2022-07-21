@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText etId;
     private Button btnLogin;
-    private Button btnRegister;
+    //private Button btnRegister;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,18 +61,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
-                startActivity(intent);
-            }
-        });
+//        btnRegister.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 
     private void setLayout() {
         etId = (EditText) findViewById(R.id.etId);
         btnLogin = (Button) findViewById(R.id.btnLogin);
-        btnRegister = (Button) findViewById(R.id.btnRegister);
+        //btnRegister = (Button) findViewById(R.id.btnRegister);
     }
 }
